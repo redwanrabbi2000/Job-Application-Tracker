@@ -33,6 +33,11 @@
             <h2 class="text-[32px] font-bold text-[#002C5C]">Available Jobs</h2>
             <span id="job-tally" class="text-slate-400 text-sm font-medium">0 jobs</span>
         </div>
+         <div class="flex gap-2 mb-8" id="filter-buttons">
+            <button onclick="filterJobs('all')" data-filter="all" class="filter-btn px-6 py-1.5 rounded-md bg-blue-600 text-white text-sm transition shadow-md">All</button>
+            <button onclick="filterJobs('interview')" data-filter="interview" class="filter-btn px-6 py-1.5 rounded-md bg-white border border-slate-200 text-slate-500 text-sm hover:bg-slate-50">Interview</button>
+            <button onclick="filterJobs('rejected')" data-filter="rejected" class="filter-btn px-6 py-1.5 rounded-md bg-white border border-slate-200 text-slate-500 text-sm hover:bg-slate-50">Rejected</button>
+        </div>
 
       </div>
               
