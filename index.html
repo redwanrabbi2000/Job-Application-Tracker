@@ -9,11 +9,11 @@
      
     </style>
   </head>
-  <body>
+  <body class="bg-slate-50 min-h-screen p-4 md:p-8 text-slate-800">
     <main>
-      <div>
+      <div class="max-w-5xl mx-auto">
         <h1 class="text-3xl font-bold text-[#0f2d52] mb-8">Job Application Tracker</h1>
-        <div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                 <p class="text-slate-500 font-medium mb-1">Total</p>
                 <p id="total-count" class="text-3xl font-bold">0</p>
@@ -37,6 +37,16 @@
             <button onclick="filterJobs('all')" data-filter="all" class="filter-btn px-6 py-1.5 rounded-md bg-blue-600 text-white text-sm transition shadow-md">All</button>
             <button onclick="filterJobs('interview')" data-filter="interview" class="filter-btn px-6 py-1.5 rounded-md bg-white border border-slate-200 text-slate-500 text-sm hover:bg-slate-50">Interview</button>
             <button onclick="filterJobs('rejected')" data-filter="rejected" class="filter-btn px-6 py-1.5 rounded-md bg-white border border-slate-200 text-slate-500 text-sm hover:bg-slate-50">Rejected</button>
+        </div>
+         <div id="jobs-container" class="space-y-6">
+            </div>
+
+        <div id="empty-state" class="hidden bg-white border border-slate-100 rounded-2xl py-20 flex flex-col items-center justify-center text-center">
+            <div class="bg-blue-100 p-4 rounded-2xl mb-4">
+                <img src="./jobs.png" alt="no jobs" class="w-16 h-16">
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f2d52] mb-1">No jobs available</h3>
+            <p class="text-slate-400">Check back soon for new job opportunities</p>
         </div>
 
       </div>
